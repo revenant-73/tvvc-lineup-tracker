@@ -1,0 +1,123 @@
+16 Teal
+4	Valor	Gonzalez
+7	Addie	Prouty
+8	Towner	Neveln
+9	Sabella Niznik
+11	Bella	Kendall
+12	Tabatha	Andrews
+16	Emma	Samaranch Parellada
+22	Emma	Cooper
+44	Tyala	Ross
+77	Calla	Harris
+
+16 Coral
+2	Sophia	O'Brien
+3	Pooja	Desai
+5	Charlotte Boyd
+8	Gracey	Sposito
+10	Chioma	Amukamara
+11	Alice	Paulsen
+12	Kenza 	Johnson
+13	Hannah	Tanga
+14	Joy	Kamonjo
+15	Emma	Cortez
+
+16 Black
+1	Renee Fegurgur 
+4	Krystina Baca Aguilar 
+6	Natalee	Her
+7	Riley	Meyers
+8	Danielle Raine 	Perez
+10	Nora	Hayes
+11	Ellie	Doyle
+12	Sienna	Taylor
+18	Makenna	Sewall
+22	Savannah Wills
+
+18 Teal
+1	cynthia	Manriquez
+2	Mireya	Rodriguez
+3	Lexie	Love
+5	Annaly	Acosta Alcazar
+6	Heaven	Girma
+8	Amelia	Aalto
+9	Sawyer	Peters
+10	Halle	Longgood
+19	Eva	Slavikova
+23	Adrie	Raatz
+
+18 Coral
+3	Cassey Naiome	Babia
+4	Chloe	Jepsen
+6	Isabel	Curiel
+7	Kaia	Esteban
+8	Sophie 	Ruston
+9	Rylie 	Benge 
+11	Tiffany	Espinoza 
+13	Mallak	Kamel
+17	Saren	Oberst
+84	Hayden	Holycross
+
+18 Black
+2	Maya	Davis
+3	Fernanda	Guzman
+5	Lilly	Sewell
+7	Callie	Axtell
+9	Grace	Nielsen
+11	Mackenzie	Doyle
+14	Ava	Durtschi
+15	Addie	Harmon
+21	Kylee	Wright
+24	Anna	Rehfield
+
+14 Teal
+
+1	Stryder	Graff
+3	Abi Belinda 	Ramirez 
+4	Zuzana	Neckarova
+6	Lily	Detlefsen 
+9	Madison	Ramirez
+10	Emma	Knuth
+12	Scarlett	Rodriguez 
+13	Sophia 	Bogush
+24	Baylee	Fonder
+52	Morgan	Anderson
+
+14 Coral
+
+2	Damari 	Conde
+3	Clara	McFarland 
+7	Amy	Pho
+8	Camila 	Perez Ramirez 
+10	Maya	Jones
+11	Evie	Edwards
+15	Emelia	Ruecker
+20	Eleanor	Ruecker
+21	Reagan	Aillaud
+22	Edith 	Shelton
+
+14 White
+25	Analia	Castillo
+15	Annie	McFeron
+8	Aria	Braxmeyer
+16	Ella	Conway
+71	Hiba	Mahmood
+99	Khloe	Badua
+88	Kolby	Spearman
+9	Lena	Rashed
+35	Marilyn	Boyd
+11	Oriana 	Tupuola
+32	Sophia	Rossi
+
+14 Black
+7	Ashlynn	Procter
+2	Aubriel 	Mack
+6	Eden	Procter
+4	Elliot	Brown
+12	Erin	Shannon
+20	Kamila	Cornejo
+10	Karley	Sehorn
+21	Melanie 	Olmos
+5	Piper	Siewell
+13	Ruby	Nielsen
+17	Waverly	Marshall
