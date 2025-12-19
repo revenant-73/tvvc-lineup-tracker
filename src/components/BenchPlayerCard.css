@@ -1,6 +1,6 @@
 .bench-player-card {
-  background: white;
-  border: 2px solid #ddd;
+  background: #16181D;
+  border: 2px solid #24262C;
   border-radius: 8px;
   padding: 12px 16px;
   min-width: 100px;
@@ -14,27 +14,27 @@
 }
 
 .bench-player-card:hover {
-  background-color: #f9f9f9;
-  border-color: #999;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #1FA4A9;
+  border-color: #1FA4A9;
+  box-shadow: 0 2px 8px rgba(31, 164, 169, 0.3);
 }
 
 .bench-player-card.selected {
-  background-color: #e8f5e9;
-  border-color: #4caf50;
+  background-color: #1FA4A9;
+  border-color: #FF6B5A;
   border-width: 3px;
-  box-shadow: 0 0 12px rgba(76, 175, 80, 0.5);
+  box-shadow: 0 0 12px rgba(255, 107, 90, 0.5);
 }
 
 .bench-player-number {
   font-size: 20px;
   font-weight: bold;
-  color: #333;
+  color: #F2F2F4;
 }
 
 .bench-player-name {
   font-size: 12px;
-  color: #666;
+  color: #B6BCC6;
   text-align: center;
   word-break: break-word;
   max-width: 100%;

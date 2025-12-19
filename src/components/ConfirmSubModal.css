@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,19 +12,19 @@
 }
 
 .modal-content {
-  background: white;
+  background: #16181D;
   border-radius: 12px;
   padding: 24px;
   max-width: 500px;
   width: 90%;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
 }
 
 .modal-content h2 {
   margin: 0 0 24px 0;
   font-size: 20px;
   text-align: center;
-  color: #333;
+  color: #F2F2F4;
 }
 
 .sub-details {
@@ -46,7 +46,7 @@
 .label {
   font-size: 12px;
   font-weight: bold;
-  color: #666;
+  color: #B6BCC6;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -61,30 +61,30 @@
 .player-number {
   font-size: 32px;
   font-weight: bold;
-  color: #333;
+  color: #1FA4A9;
 }
 
 .player-name {
   font-size: 14px;
-  color: #555;
+  color: #F2F2F4;
   text-align: center;
 }
 
 .going-to-bench {
   font-size: 11px;
-  color: #999;
+  color: #7A808A;
   font-style: italic;
 }
 
 .empty {
   font-size: 14px;
-  color: #999;
+  color: #7A808A;
   font-style: italic;
 }
 
 .arrow {
   font-size: 24px;
-  color: #667eea;
+  color: #FF6B5A;
   font-weight: bold;
 }
 
@@ -106,12 +106,12 @@
 }
 
 .btn-cancel {
-  background: #e0e0e0;
-  color: #333;
+  background: #24262C;
+  color: #F2F2F4;
 }
 
 .btn-cancel:hover {
-  background: #d0d0d0;
+  background: #16868B;
 }
 
 .btn-cancel:active {
@@ -119,12 +119,12 @@
 }
 
 .btn-confirm {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FF6B5A 0%, #D94A3A 100%);
   color: white;
 }
 
 .btn-confirm:hover {
-  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+  box-shadow: 0 4px 12px rgba(255, 107, 90, 0.4);
 }
 
 .btn-confirm:active {

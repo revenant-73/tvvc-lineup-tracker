@@ -1,6 +1,6 @@
 .game-day-screen {
   min-height: 100vh;
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: #0E0E11;
   padding: 20px;
 }
 
@@ -17,21 +17,21 @@
 .header h1 {
   margin: 0;
   font-size: 36px;
-  color: #333;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: #F2F2F4;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .no-team-message {
   text-align: center;
   padding: 60px 20px;
-  background: white;
+  background: #16181D;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 .no-team-message p {
   font-size: 18px;
-  color: #666;
+  color: #B6BCC6;
   margin: 0;
 }
 

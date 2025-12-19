@@ -2,10 +2,10 @@
   display: flex;
   align-items: stretch;
   gap: 0;
-  background: white;
+  background: #0E0E11;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   margin: 16px 0;
 }
 
@@ -20,12 +20,12 @@
 }
 
 .score-section.tvvc {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #1FA4A9 0%, #16868B 100%);
   color: white;
 }
 
 .score-section.opponent {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #FF6B5A 0%, #D94A3A 100%);
   color: white;
 }
 
@@ -90,7 +90,7 @@
 .score-divider {
   width: 2px;
   height: 100%;
-  background: #e0e0e0;
+  background: #24262C;
 }
 
 @media (max-width: 768px) {

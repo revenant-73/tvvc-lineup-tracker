@@ -1,5 +1,5 @@
 .court-cell {
-  border: 3px solid #333;
+  border: 3px solid #24262C;
   border-radius: 8px;
   padding: 12px;
   min-height: 100px;
@@ -7,26 +7,26 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #fff9e6 0%, #fff5cc 100%);
+  background: #1FA4A9;
   position: relative;
   cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .court-cell.front-row {
-  background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 100%);
-  border-color: #cc0000;
+  background: #1FA4A9;
+  border-color: #FF6B5A;
 }
 
 .court-cell.back-row {
-  background: linear-gradient(135deg, #e6f3ff 0%, #ccebff 100%);
-  border-color: #0066cc;
+  background: #16868B;
+  border-color: #1FA4A9;
 }
 
 .court-cell.selected {
-  border-color: #4caf50;
-  box-shadow: 0 0 15px rgba(76, 175, 80, 0.6), inset 0 0 10px rgba(76, 175, 80, 0.2);
-  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+  border-color: #FF6B5A;
+  box-shadow: 0 0 15px rgba(255, 107, 90, 0.6), inset 0 0 10px rgba(255, 107, 90, 0.2);
+  background: #FF6B5A;
 }
 
 .court-cell:hover {
@@ -39,8 +39,8 @@
   right: 4px;
   font-size: 12px;
   font-weight: bold;
-  color: #666;
-  background: rgba(255, 255, 255, 0.8);
+  color: #0E0E11;
+  background: rgba(242, 242, 244, 0.9);
   padding: 2px 6px;
   border-radius: 4px;
 }
@@ -60,19 +60,19 @@
 .player-number {
   font-size: 32px;
   font-weight: bold;
-  color: #333;
+  color: #0E0E11;
 }
 
 .player-name {
   font-size: 12px;
-  color: #555;
+  color: #0E0E11;
   margin-top: 4px;
   word-break: break-word;
   max-width: 90%;
 }
 
 .empty-cell {
-  color: #999;
+  color: #B6BCC6;
   font-style: italic;
   font-size: 14px;
 }

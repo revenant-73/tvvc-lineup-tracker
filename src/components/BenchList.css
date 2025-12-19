@@ -1,5 +1,5 @@
 .bench-section {
-  background: #f9f9f9;
+  background: #24262C;
   border-radius: 8px;
   padding: 16px;
   margin: 20px 0;
@@ -16,15 +16,15 @@
 .bench-header h3 {
   margin: 0;
   font-size: 16px;
-  color: #333;
+  color: #F2F2F4;
   font-weight: bold;
 }
 
 .selected-info {
   font-size: 12px;
-  color: #4caf50;
+  color: #0E0E11;
   font-weight: bold;
-  background: #e8f5e9;
+  background: #1FA4A9;
   padding: 4px 8px;
   border-radius: 4px;
   white-space: nowrap;
@@ -43,22 +43,22 @@
 }
 
 .bench-list::-webkit-scrollbar-track {
-  background: #e0e0e0;
+  background: #16181D;
   border-radius: 3px;
 }
 
 .bench-list::-webkit-scrollbar-thumb {
-  background: #999;
+  background: #16868B;
   border-radius: 3px;
 }
 
 .bench-list::-webkit-scrollbar-thumb:hover {
-  background: #666;
+  background: #1FA4A9;
 }
 
 .empty-bench {
   text-align: center;
-  color: #999;
+  color: #7A808A;
   font-style: italic;
   padding: 20px;
   width: 100%;

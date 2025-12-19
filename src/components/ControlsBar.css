@@ -34,22 +34,22 @@
 }
 
 .rotate-btn {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #FF6B5A 0%, #D94A3A 100%);
   color: white;
 }
 
 .undo-btn {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background: linear-gradient(135deg, #1FA4A9 0%, #16868B 100%);
   color: white;
 }
 
 .undo-btn:disabled {
-  background: #ccc;
+  background: #7A808A;
 }
 
 .reset-btn {
-  background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
-  color: #333;
+  background: linear-gradient(135deg, #FF8A7D 0%, #FF6B5A 100%);
+  color: white;
 }
 
 @media (max-width: 768px) {

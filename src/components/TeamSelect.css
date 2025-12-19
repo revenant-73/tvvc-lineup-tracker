@@ -3,39 +3,40 @@
   align-items: center;
   gap: 12px;
   padding: 16px;
-  background: white;
+  background: #16181D;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
 
 .team-label {
   font-size: 16px;
   font-weight: bold;
-  color: #333;
+  color: #F2F2F4;
   white-space: nowrap;
 }
 
 .team-select {
   flex: 1;
   padding: 10px 12px;
-  border: 2px solid #ddd;
+  border: 2px solid #24262C;
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
   transition: border-color 0.2s;
-  background: white;
+  background: #0E0E11;
+  color: #F2F2F4;
   min-width: 200px;
 }
 
 .team-select:hover {
-  border-color: #999;
+  border-color: #1FA4A9;
 }
 
 .team-select:focus {
   outline: none;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  border-color: #1FA4A9;
+  box-shadow: 0 0 0 3px rgba(31, 164, 169, 0.2);
 }
 
 @media (max-width: 768px) {
