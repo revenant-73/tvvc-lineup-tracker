@@ -8,7 +8,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  cursor: grab;
+  cursor: pointer;
   transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s;
   flex-shrink: 0;
 }
@@ -19,14 +19,11 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.bench-player-card:active {
-  cursor: grabbing;
-}
-
-.bench-player-card.dragging {
-  opacity: 0.5;
+.bench-player-card.selected {
   background-color: #e8f5e9;
   border-color: #4caf50;
+  border-width: 3px;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.5);
 }
 
 .bench-player-number {

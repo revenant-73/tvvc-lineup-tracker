@@ -1,23 +1,17 @@
-import { useDraggable } from '@dnd-kit/core';
 import type { Player } from '../types';
 import './BenchPlayerCard.css';
 
 interface BenchPlayerCardProps {
   player: Player;
+  isSelected?: boolean;
+  onSelect?: (player: Player) => void;
 }
 
-export function BenchPlayerCard({ player }: BenchPlayerCardProps) {
-  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({
-    id: player.id,
-    data: { type: 'player', origin: 'bench' },
-  });
-
+export function BenchPlayerCard({ player, isSelected, onSelect }: BenchPlayerCardProps) {
   return (
     <div
-      ref={setNodeRef}
-      className={`bench-player-card ${isDragging ? 'dragging' : ''}`}
-      {...listeners}
-      {...attributes}
+      className={`bench-player-card ${isSelected ? 'selected' : ''}`}
+      onClick={() => onSelect?.(player)}
     >
       <div className="bench-player-number">{player.number}</div>
       <div className="bench-player-name">{player.name}</div>

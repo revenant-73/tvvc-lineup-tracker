@@ -5,9 +5,11 @@ import './CourtGrid.css';
 interface CourtGridProps {
   positions: CourtState;
   playerMap: Record<string, Player>;
+  selectedPosition?: PositionKey | null;
+  onPositionSelect?: (position: PositionKey) => void;
 }
 
-export function CourtGrid({ positions, playerMap }: CourtGridProps) {
+export function CourtGrid({ positions, playerMap, selectedPosition, onPositionSelect }: CourtGridProps) {
   return (
     <div className="court-grid">
       <div className="court-section">
@@ -18,6 +20,8 @@ export function CourtGrid({ positions, playerMap }: CourtGridProps) {
               key={pos}
               position={pos as PositionKey}
               player={positions[pos as PositionKey] ? playerMap[positions[pos as PositionKey]!] : null}
+              isSelected={selectedPosition === pos}
+              onSelect={onPositionSelect}
             />
           ))}
         </div>
@@ -33,6 +37,8 @@ export function CourtGrid({ positions, playerMap }: CourtGridProps) {
               key={pos}
               position={pos as PositionKey}
               player={positions[pos as PositionKey] ? playerMap[positions[pos as PositionKey]!] : null}
+              isSelected={selectedPosition === pos}
+              onSelect={onPositionSelect}
             />
           ))}
         </div>

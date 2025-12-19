@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from 'react';
-import { DndContext, DragEndEvent, closestCenter } from '@dnd-kit/core';
 import type { Team, Player, MatchState, PositionKey } from '../types';
 import { TEAMS } from '../data/teams';
 import { rotatePositions } from '../utils/rotation';
@@ -10,6 +9,7 @@ import { ScoreBar } from './ScoreBar';
 import { CourtGrid } from './CourtGrid';
 import { BenchList } from './BenchList';
 import { ControlsBar } from './ControlsBar';
+import { ConfirmSubModal } from './ConfirmSubModal';
 import './GameDayScreen.css';
 
 export function GameDayScreen() {
@@ -17,6 +17,8 @@ export function GameDayScreen() {
   const [currentTeam, setCurrentTeam] = useState<Team | null>(null);
   const [matchState, setMatchState] = useState<MatchState | null>(null);
   const [history, setHistory] = useState<MatchState[]>([]);
+  const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  const [selectedPosition, setSelectedPosition] = useState<PositionKey | null>(null);
 
   const playerMap = currentTeam
     ? currentTeam.roster.reduce(
@@ -58,26 +60,23 @@ export function GameDayScreen() {
     []
   );
 
-  const handleDragEnd = (event: DragEndEvent) => {
-    if (!matchState || !currentTeam) return;
+  const handlePlayerSelect = (player: Player) => {
+    setSelectedPlayer(player);
+  };
 
-    const { active, over } = event;
+  const handlePositionSelect = (position: PositionKey) => {
+    setSelectedPosition(position);
+  };
 
-    if (!over) return;
+  const handleConfirmSubstitution = () => {
+    if (!selectedPlayer || !selectedPosition || !matchState) return;
 
-    const draggedPlayerId = active.id as string;
-    const dropTarget = (over.data as unknown as { type: string; position?: PositionKey } | undefined);
-
-    if (!dropTarget || dropTarget.type !== 'court') return;
-
-    const position = dropTarget.position as PositionKey;
     const newState = { ...matchState };
-
     const { positions, bench } = performSubstitution(
       newState.positions,
       newState.bench,
-      draggedPlayerId,
-      position
+      selectedPlayer.id,
+      selectedPosition
     );
 
     const updatedState: MatchState = {
@@ -89,6 +88,13 @@ export function GameDayScreen() {
 
     setHistory([...history, matchState]);
     setMatchState(updatedState);
+    setSelectedPlayer(null);
+    setSelectedPosition(null);
+  };
+
+  const handleCancelSubstitution = () => {
+    setSelectedPlayer(null);
+    setSelectedPosition(null);
   };
 
   const handleRotate = () => {
@@ -193,14 +199,29 @@ export function GameDayScreen() {
               onOppScoreDec={handleOppScoreDec}
             />
 
-            <DndContext onDragEnd={handleDragEnd} collisionDetection={closestCenter}>
-              <CourtGrid
-                positions={matchState.positions}
-                playerMap={playerMap}
-              />
+            <CourtGrid
+              positions={matchState.positions}
+              playerMap={playerMap}
+              selectedPosition={selectedPosition}
+              onPositionSelect={handlePositionSelect}
+            />
 
-              <BenchList benchPlayers={benchPlayers} />
-            </DndContext>
+            <BenchList
+              benchPlayers={benchPlayers}
+              selectedPlayer={selectedPlayer}
+              onPlayerSelect={handlePlayerSelect}
+            />
+
+            <ConfirmSubModal
+              isOpen={!!(selectedPlayer && selectedPosition)}
+              selectedPlayer={selectedPlayer}
+              selectedPosition={selectedPosition}
+              currentPlayerInPosition={
+                selectedPosition ? playerMap[matchState.positions[selectedPosition] || ''] : null
+              }
+              onConfirm={handleConfirmSubstitution}
+              onCancel={handleCancelSubstitution}
+            />
 
             <ControlsBar
               onRotate={handleRotate}

@@ -1,4 +1,3 @@
-import { useDroppable } from '@dnd-kit/core';
 import type { Player, PositionKey } from '../types';
 import { isFrontRow } from '../utils/rotation';
 import './CourtCell.css';
@@ -6,20 +5,17 @@ import './CourtCell.css';
 interface CourtCellProps {
   position: PositionKey;
   player: Player | null;
+  isSelected?: boolean;
+  onSelect?: (position: PositionKey) => void;
 }
 
-export function CourtCell({ position, player }: CourtCellProps) {
-  const { setNodeRef, isOver } = useDroppable({
-    id: `court-${position}`,
-    data: { position, type: 'court' },
-  });
-
+export function CourtCell({ position, player, isSelected, onSelect }: CourtCellProps) {
   const front = isFrontRow(position);
 
   return (
     <div
-      ref={setNodeRef}
-      className={`court-cell ${front ? 'front-row' : 'back-row'} ${isOver ? 'over' : ''}`}
+      className={`court-cell ${front ? 'front-row' : 'back-row'} ${isSelected ? 'selected' : ''}`}
+      onClick={() => onSelect?.(position)}
     >
       <div className="position-label">Pos {position}</div>
       {position === 1 && <div className="serving-indicator">🏐</div>}

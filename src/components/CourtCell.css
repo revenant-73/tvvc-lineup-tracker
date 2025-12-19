@@ -1,5 +1,5 @@
 .court-cell {
-  border: 2px solid #333;
+  border: 3px solid #333;
   border-radius: 8px;
   padding: 12px;
   min-height: 100px;
@@ -9,8 +9,8 @@
   justify-content: center;
   background: linear-gradient(135deg, #fff9e6 0%, #fff5cc 100%);
   position: relative;
-  cursor: grab;
-  transition: background-color 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .court-cell.front-row {
@@ -23,9 +23,14 @@
   border-color: #0066cc;
 }
 
-.court-cell.over {
-  background-color: #90EE90;
-  box-shadow: 0 0 10px rgba(0, 200, 0, 0.5);
+.court-cell.selected {
+  border-color: #4caf50;
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.6), inset 0 0 10px rgba(76, 175, 80, 0.2);
+  background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+}
+
+.court-cell:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .position-label {
