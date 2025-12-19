@@ -1,0 +1,59 @@
+.bench-player-card {
+  background: white;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 16px;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: grab;
+  transition: background-color 0.2s, box-shadow 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+}
+
+.bench-player-card:hover {
+  background-color: #f9f9f9;
+  border-color: #999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bench-player-card:active {
+  cursor: grabbing;
+}
+
+.bench-player-card.dragging {
+  opacity: 0.5;
+  background-color: #e8f5e9;
+  border-color: #4caf50;
+}
+
+.bench-player-number {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bench-player-name {
+  font-size: 12px;
+  color: #666;
+  text-align: center;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bench-player-card {
+    min-width: 90px;
+    padding: 10px 12px;
+  }
+
+  .bench-player-number {
+    font-size: 18px;
+  }
+
+  .bench-player-name {
+    font-size: 11px;
+  }
+}

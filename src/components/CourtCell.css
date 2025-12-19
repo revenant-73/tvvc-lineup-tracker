@@ -1,0 +1,73 @@
+.court-cell {
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff9e6 0%, #fff5cc 100%);
+  position: relative;
+  cursor: grab;
+  transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.court-cell.front-row {
+  background: linear-gradient(135deg, #ffe6e6 0%, #ffcccc 100%);
+  border-color: #cc0000;
+}
+
+.court-cell.back-row {
+  background: linear-gradient(135deg, #e6f3ff 0%, #ccebff 100%);
+  border-color: #0066cc;
+}
+
+.court-cell.over {
+  background-color: #90EE90;
+  box-shadow: 0 0 10px rgba(0, 200, 0, 0.5);
+}
+
+.position-label {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #666;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.serving-indicator {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 18px;
+}
+
+.player-info {
+  text-align: center;
+  width: 100%;
+}
+
+.player-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.player-name {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
+  word-break: break-word;
+  max-width: 90%;
+}
+
+.empty-cell {
+  color: #999;
+  font-style: italic;
+  font-size: 14px;
+}

@@ -1,0 +1,66 @@
+.bench-section {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.bench-header {
+  margin-bottom: 12px;
+}
+
+.bench-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.bench-list {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+}
+
+.bench-list::-webkit-scrollbar {
+  height: 6px;
+}
+
+.bench-list::-webkit-scrollbar-track {
+  background: #e0e0e0;
+  border-radius: 3px;
+}
+
+.bench-list::-webkit-scrollbar-thumb {
+  background: #999;
+  border-radius: 3px;
+}
+
+.bench-list::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.empty-bench {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bench-section {
+    padding: 12px;
+    margin: 16px 0;
+  }
+
+  .bench-header h3 {
+    font-size: 14px;
+  }
+
+  .bench-list {
+    gap: 8px;
+  }
+}
